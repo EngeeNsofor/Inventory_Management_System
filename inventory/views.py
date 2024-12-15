@@ -7,11 +7,7 @@ from django.contrib.auth.models import User
 # Create your views here.
 
 class InventoryItemViewSet(viewsets.ModelViewSet):
-    """
-    viewsets.ModelViewSet provides a set of default actions 
-    like create(), list(), retrieve(), update(), and destroy() 
-    without needing to write them explicitly.
-    """
+
     queryset = InventoryItem.objects.all()
     serializer_class = InventoryItemSerializer
 
